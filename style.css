@@ -1,0 +1,246 @@
+/* Base Styles */
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  #header-container,
+  #products-container,
+  #testimony-container,
+  #form-container {
+    scroll-snap-align: start;
+  }
+  
+  /* Navbar */
+  #header-container {
+    background-color: #1f2937;
+    padding: 1em 16em 4em;
+  }
+  
+  #header-container p,
+  #header-container h1,
+  #header-container a,
+  #header-container h2 {
+    color: #f9faf8;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-container {
+    margin-left: auto;
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 4em;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Hero Content */
+  #header-content {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hero-title {
+    font-size: 2.5em;
+  }
+  
+  .hero-text {
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding-right: 7em;
+  }
+  
+  .hero-img img {
+    height: 26em;
+    width: auto;
+  }
+  
+  .signupbtn {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 45px;
+    font: bold 1.1em "Roboto", sans-serif;
+    color: white;
+    margin-top: 2em;
+  }
+  
+  /* Product Info */
+  img {
+    height: 13em;
+    border-radius: 9px;
+  }
+  
+  #products-title {
+    margin-top: 2.5em;
+    font-size: 2.7em;
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+  }
+  
+  #items-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  
+  .items {
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item-description {
+    text-align: center;
+    color: #1f2937;
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+  
+  /* Testimony */
+  #testimony-container {
+    background-color: #e5e7eb;
+    margin-top: 5em;
+    padding: 10em 20em;
+  }
+  
+  #testimony {
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 200;
+  }
+  
+  #signed {
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: end;
+  }
+  
+  /* CTA */
+  #form-container {
+    background-color: #3882f6;
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5em auto;
+    padding: 4em;
+    border-radius: 5px;
+  }
+  
+  #form-text-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #form-text-p {
+    font-size: 1.1em;
+    color: white;
+  }
+  
+  .signupbtn2 {
+    background-color: #3882f6;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 45px;
+    font: bold 1.3em "Roboto", sans-serif;
+    color: white;
+  }
+  
+  /* Footer */
+  #footer {
+    background-color: #1f2937;
+    padding: 4em 10em;
+    text-align: center;
+  }
+  
+  #odin-p {
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #header-container {
+      padding: 2em;
+    }
+  
+    #navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      margin-left: 0;
+      gap: 0.5em;
+    }
+  
+    .nav-link {
+      margin-left: 0;
+    }
+  
+    #header-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2em;
+    }
+  
+    .hero-text {
+      padding-right: 0;
+    }
+  
+    .hero-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    #items-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #testimony-container {
+      padding: 4em 2em;
+    }
+  
+    #testimony {
+      font-size: 2em;
+    }
+  
+    #signed {
+      font-size: 1.2em;
+    }
+  
+    #form-container {
+      flex-direction: column;
+      padding: 3em 2em;
+      gap: 2em;
+    }
+  
+    #form-text-header {
+      text-align: center;
+    }
+  
+    #footer {
+      padding: 2em;
+    }
+  }
+  
